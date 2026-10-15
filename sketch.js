@@ -33,4 +33,4 @@ beat.stop();
 beat.loop();
 }
 }
-}
+
