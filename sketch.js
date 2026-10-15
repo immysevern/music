@@ -10,6 +10,7 @@ function setup() {
   analyzer = new p5.Amplitude();
   analyzer.setInput(beat);
 }
+
 function mousePressed() {
 if (beat.isPlaying()) {
 beat.stop();
@@ -33,11 +34,4 @@ stroke(0);
 ellipse(width / 2, height / 2, 10 + rms * 200, 10 + rms * 200);
 }
 
-function mousePressed() {
-if (beat.isPlaying()) {
-beat.stop();
-} else {
-beat.loop();
-}
-}
 
