@@ -10,6 +10,13 @@ function setup() {
   analyzer = new p5.Amplitude();
   analyzer.setInput(beat);
 }
+function mousePressed() {
+if (beat.isPlaying()) {
+beat.stop();
+} else {
+beat.loop();
+}
+}
 
 function draw() {
   erase();
