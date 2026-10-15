@@ -12,6 +12,9 @@ analyzer.setInput(beat);
 }
 
 function draw() {
+  erase();
+ellipse(width / 2, height / 2, 220, 220);
+noErase();
 // Get the average (root mean square) amplitude
 let rms = 0
 if (analyzer.getLevel()){
